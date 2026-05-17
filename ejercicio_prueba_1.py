@@ -23,14 +23,14 @@ while flag_tramo_cliente == True:
 
 #Asignando valores fijos
 valor_mensual_medicamento = 60000
-valor_despacho_domicilio = 8000
+valor_despacho_domicilio  = 8000
 
 #Asignando variables
 valor_final_medicamento = 0
-valor_final_despacho = 0
-descuento = 0
-descuento_despacho = 0
-total = 0
+valor_final_despacho    = 0
+descuento               = 0
+descuento_despacho      = 0
+total                   = 0
 
 #Evaluando el descuento otorgado por edad y tramo
 if edad <= 30 and tramo in ("A", "B"):
@@ -46,7 +46,7 @@ else:
 
 #Evaluando el descuento para el despacho
 if tramo == "A" or tramo == "B":
-    if edad >= 55 and edad <= 60:
+    if edad >= 55:
         descuento_despacho = 0.15
     else:
         descuento_despacho = 0.1
